@@ -18,3 +18,13 @@ def display_loop_menu():
 
     number = input("Please select a number: ")
     return number
+
+def display_ship_menu():
+    print("++++++++++++++++++++++++++++++++++++++")
+    print("+ 1. Modify modules                  +")
+    print("+ 2. Activate module                 +")
+    print("+ 3. View Current System(wip)        +")
+    print("++++++++++++++++++++++++++++++++++++++")
+
+    number = input("Please select a number: ")
+    return number

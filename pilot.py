@@ -15,7 +15,9 @@ def create_pilot(name):
     ship = {
         "name": "The Fresh Glizzy",
         "class": "Peasant",
-        "fuelUnits": 50
+        "fuelUnits": 50,
+        "modules": ["Scanner"],
+        "inventory": []
         }
     pilot = {
         "name": name,
@@ -43,6 +45,7 @@ def view_pilot():
         print("Name:", ship["name"])
         print("Class:", ship["class"])
         print("Fuel:", ship["fuelUnits"], "units")
+        print("Modules:", ship["modules"])
     
     input("Press ENTER to return")
 

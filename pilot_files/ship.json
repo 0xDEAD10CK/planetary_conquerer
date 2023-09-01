@@ -1,5 +1,8 @@
 {
   "name": "The Fresh Glizzy",
   "class": "Peasant",
-  "fuelUnits": 47
+  "fuelUnits": 50,
+  "modules": [
+    "Scanner"
+  ]
 }
