@@ -1,0 +1,14 @@
+model StarSystem {
+	designation			String
+	classification		String
+	economy				String
+	planets				Planets[]
+}
+
+model Planet {
+	StarSystem   		StarSystem @relation(fields: [StarSystemID], references: [designation])
+	StarSystemID 		String // relation scalar field  (used in the `@relation` attribute above)
+	designation			String
+	type				String
+	description			String
+}
