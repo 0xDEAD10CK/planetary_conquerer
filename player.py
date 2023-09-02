@@ -31,7 +31,7 @@ def create_pilot(name):
         json.dump(ship, json_file, indent=2)
 
 
-def view_pilot():
+def view_player():
     with open("pilot_files/pilot.json", "r") as json_file:
         pilot = json.load(json_file)
     with open("pilot_files/ship.json", "r") as json_file:

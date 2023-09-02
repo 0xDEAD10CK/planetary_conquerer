@@ -12,8 +12,9 @@ def display_main_menu():
 def display_loop_menu():
     print("++++++++++++++++++++++++++++++++++++++")
     print("+ 1. View Pilot                      +")
-    print("+ 2. View Nearby Systems             +")
-    print("+ 3. View Current System(wip)        +")
+    print("+ 2. View Ship                       +")
+    print("+ 3. View Nearby Systems             +")
+    print("+ 4. View Current System(wip)        +")
     print("++++++++++++++++++++++++++++++++++++++")
 
     number = input("Please select a number: ")
@@ -23,7 +24,6 @@ def display_ship_menu():
     print("++++++++++++++++++++++++++++++++++++++")
     print("+ 1. Modify modules                  +")
     print("+ 2. Activate module                 +")
-    print("+ 3. View Current System(wip)        +")
     print("++++++++++++++++++++++++++++++++++++++")
 
     number = input("Please select a number: ")

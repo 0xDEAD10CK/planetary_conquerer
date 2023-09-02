@@ -1,6 +1,6 @@
 from universe import generate
-from pilot import create_pilot, view_pilot
-from menu import display_main_menu, display_loop_menu
+from player import create_pilot, view_player
+from menu import display_main_menu, display_loop_menu, display_ship_menu
 from utils import clear, checkFile, joinPath
 from systems import generate_selected_star_systems, view_nearby_systems, move_to_nearby_system
 import random as rd
@@ -25,9 +25,13 @@ while gameState == True:
     
     if choice == "1":
         clear()
-        view_pilot()
+        view_player()
 
     if choice == "2":
+        clear()
+        display_ship_menu()
+
+    if choice == "3":
         clear()
         
         view_nearby_systems("universe_files/selected_star_systems.json")
