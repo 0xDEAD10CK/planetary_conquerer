@@ -1,6 +1,6 @@
 import random
 import json
-from descriptor_generator import generate_descriptor, generate_star_system_type, generate_star_system_economy
+from descriptors import generate_descriptor, generate_star_system_type, generate_star_system_economy
 import sys
 
 alpha = ["A","B","C","D","E","F","G","H",

@@ -5,9 +5,5 @@
   "modules": [
     "Scanner"
   ],
-  "inventory": {
-    "Lomdesium": 36475,
-    "Kelorium": 55721,
-    "Veqsum": 56102
-  }
+  "inventory": {}
 }

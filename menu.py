@@ -23,7 +23,7 @@ def display_loop_menu():
 def display_ship_menu():
     print("++++++++++++++++++++++++++++++++++++++")
     print("+ 1. Modify modules                  +")
-    print("+ 2. Activate module                 +")
+    print("+ 2. Mine ORE                        +")
     print("++++++++++++++++++++++++++++++++++++++")
 
     number = input("Please select a number: ")

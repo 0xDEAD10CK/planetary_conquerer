@@ -17,17 +17,18 @@ def create_pilot(name):
         "class": "Peasant",
         "fuelUnits": 50,
         "modules": ["Scanner"],
-        "inventory": []
+        "inventory": {}
         }
     pilot = {
         "name": name,
         "occ": occ,
+        "level": 1,
         "credits": 50000,
         }
 
-    with open("pilot_files/pilot.json", "w") as json_file:
+    with open(f"pilot_files/{name}-pilot.json", "w") as json_file:
         json.dump(pilot, json_file, indent=2)
-    with open("pilot_files/ship.json", "w") as json_file:
+    with open(f"pilot_files/{name}-ship.json", "w") as json_file:
         json.dump(ship, json_file, indent=2)
 
 
@@ -46,6 +47,7 @@ def view_player():
         print("Class:", ship["class"])
         print("Fuel:", ship["fuelUnits"], "units")
         print("Modules:", ship["modules"])
+        print("Inventory:", ship["inventory"])
     
     input("Press ENTER to return")
 
