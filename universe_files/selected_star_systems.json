@@ -1,124 +1,5 @@
 [
   {
-    "index": 41011,
-    "designation": "6XH",
-    "classification": "Pulsar",
-    "economy": "plentiful",
-    "planets": [
-      {
-        "designation": "QKY1U",
-        "type": "Oceanic",
-        "description": "A planet where coral reefs and underwater caves are common sights."
-      },
-      {
-        "designation": "X84U4",
-        "type": "Rocky",
-        "description": "Rocky plains stretch for miles under the planet's orange sky."
-      },
-      {
-        "designation": "WWTN9",
-        "type": "Oceanic",
-        "description": "A world where water is the dominant feature, with only scattered islands."
-      },
-      {
-        "designation": "2CB0V",
-        "type": "Gas Giant",
-        "description": "Vibrant bands of clouds stretch across the gas giant's atmosphere."
-      },
-      {
-        "designation": "KLTH3",
-        "type": "Frozen",
-        "description": "A frozen world with frozen rivers and ice-covered mountains."
-      },
-      {
-        "designation": "1YHZJ",
-        "type": "Oceanic",
-        "description": "A planet with no continents, only expansive oceans."
-      },
-      {
-        "designation": "G03H5",
-        "type": "Gas Giant",
-        "description": "A gas giant's atmosphere can extend for thousands of kilometers."
-      },
-      {
-        "designation": "CGQAE",
-        "type": "Oceanic",
-        "description": "Oceanic planets often have a vibrant and diverse range of marine species."
-      }
-    ]
-  },
-  {
-    "index": 17886,
-    "designation": "N35",
-    "classification": "Black Hole",
-    "economy": "millionaires",
-    "planets": [
-      {
-        "designation": "4UZ41",
-        "type": "Frozen",
-        "description": "Frozen planets often have a pale, blue-white coloration."
-      },
-      {
-        "designation": "OK297",
-        "type": "Gas Giant",
-        "description": "Gas giants are often accompanied by a retinue of moons and rings."
-      },
-      {
-        "designation": "MSHTG",
-        "type": "Frozen",
-        "description": "A world of ice and cold, where life struggles to survive."
-      },
-      {
-        "designation": "DHMA5",
-        "type": "Gas Giant",
-        "description": "A planet with no solid surface and an atmosphere of hydrogen and helium."
-      },
-      {
-        "designation": "RKYJQ",
-        "type": "Desert",
-        "description": "Desert planets are known for their arid and dry landscapes."
-      },
-      {
-        "designation": "10AMT",
-        "type": "Frozen",
-        "description": "Frozen tundras and icy plains stretch as far as the eye can see."
-      }
-    ]
-  },
-  {
-    "index": 33321,
-    "designation": "ZZV",
-    "classification": "Binary",
-    "economy": "needy",
-    "planets": [
-      {
-        "designation": "FQT9Q",
-        "type": "Desert",
-        "description": "Desert worlds are often home to ancient ruins and hidden treasures."
-      },
-      {
-        "designation": "DX678",
-        "type": "Desert",
-        "description": "Desert planets often have breathtaking sunrises and sunsets."
-      },
-      {
-        "designation": "5AADB",
-        "type": "Frozen",
-        "description": "A frozen desert of ice crystals and frozen rock formations."
-      },
-      {
-        "designation": "CRBPR",
-        "type": "Gas Giant",
-        "description": "Gas giants are known for their immense size and powerful storms."
-      },
-      {
-        "designation": "2UX99",
-        "type": "Gas Giant",
-        "description": "Gas giants are known for their immense size and powerful storms."
-      }
-    ]
-  },
-  {
     "index": 44641,
     "designation": "9QB",
     "classification": "Nebula",
@@ -394,6 +275,105 @@
         "designation": "9MP0D",
         "type": "Rocky",
         "description": "A planet of rocky hills and wind-swept plains."
+      }
+    ]
+  },
+  {
+    "index": 13313,
+    "designation": "KJ4",
+    "classification": "Pulsar",
+    "economy": "plentiful",
+    "planets": [
+      {
+        "designation": "ET1CR",
+        "type": "Rocky",
+        "description": "Rocky outcrops create a unique and challenging landscape."
+      },
+      {
+        "designation": "G86JA",
+        "type": "Oceanic",
+        "description": "The planet's oceans are home to mysterious creatures and ecosystems."
+      },
+      {
+        "designation": "2QANS",
+        "type": "Gas Giant",
+        "description": "A planet with a massive and dynamic atmosphere of swirling gases."
+      },
+      {
+        "designation": "55CZK",
+        "type": "Gas Giant",
+        "description": "A massive gas giant with swirling bands of colorful clouds."
+      },
+      {
+        "designation": "8WMHE",
+        "type": "Desert",
+        "description": "A planet with vast salt flats and dry riverbeds."
+      },
+      {
+        "designation": "FN83P",
+        "type": "Rocky",
+        "description": "Rocky plains stretch for miles under the planet's orange sky."
+      },
+      {
+        "designation": "T4YPW",
+        "type": "Desert",
+        "description": "The planet's extreme temperatures make survival a constant challenge."
+      }
+    ]
+  },
+  {
+    "index": 3184,
+    "designation": "CQQ",
+    "classification": "Nebula",
+    "economy": "opulent",
+    "planets": [
+      {
+        "designation": "M6IV1",
+        "type": "Desert",
+        "description": "The deserts of this planet are both harsh and alluring."
+      },
+      {
+        "designation": "SL8XJ",
+        "type": "Rocky",
+        "description": "A planet with a rocky desert landscape and little vegetation."
+      },
+      {
+        "designation": "PGWO3",
+        "type": "Gas Giant",
+        "description": "Gas giants are among the largest planets in the universe."
+      }
+    ]
+  },
+  {
+    "index": 2758,
+    "designation": "CEW",
+    "classification": "Solitary",
+    "economy": "barely making ends meet",
+    "planets": [
+      {
+        "designation": "00ZIE",
+        "type": "Oceanic",
+        "description": "A world where water is the dominant feature, with only scattered islands."
+      },
+      {
+        "designation": "AHG67",
+        "type": "Gas Giant",
+        "description": "This gas giant boasts a mesmerizing array of swirling cloud patterns."
+      },
+      {
+        "designation": "AT2GZ",
+        "type": "Rocky",
+        "description": "The surface is dotted with ancient rock formations and boulders."
+      },
+      {
+        "designation": "N9TOS",
+        "type": "Rocky",
+        "description": "A rugged landscape characterized by craggy mountains and deep canyons."
+      },
+      {
+        "designation": "23AQC",
+        "type": "Gas Giant",
+        "description": "The gas giant's atmosphere is constantly in motion, creating stunning visuals."
       }
     ]
   }

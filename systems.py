@@ -41,7 +41,7 @@ def view_nearby_systems(nearby_systems_file):
             }
 
             if counter == 5:         
-                print(f'\033[1;31;40m Designation: {X["designation"]}, Classification: {X["classification"]}, Economy: {X["economy"]}, Planet Count: {X["planets_count"]}\033[0m')
+                print(f'\033[1;32mDesignation: {X["designation"]}, Classification: {X["classification"]}, Economy: {X["economy"]}, Planet Count: {X["planets_count"]}\033[0m')
             else:
                 print(f'Designation: {X["designation"]}, Classification: {X["classification"]}, Economy: {X["economy"]}, Planet Count: {X["planets_count"]}')
             counter += 1
@@ -75,7 +75,7 @@ def move_to_nearby_system(destination_designation):
                 if system['designation'] == destination_designation:
                     selected_system = system
                     selected_system_index = index
-                    print(f'\033[1;31;40m{selected_system_index}\033[0m')
+                    print(f'\033[1;32m{selected_system_index}\033[0m')
                     break
 
     if selected_system is None:
