@@ -1,33 +1,5 @@
 [
   {
-    "index": 44641,
-    "designation": "9QB",
-    "classification": "Nebula",
-    "economy": "poverty-stricken",
-    "planets": [
-      {
-        "designation": "GFBW8",
-        "type": "Oceanic",
-        "description": "The planet's oceans are home to mysterious creatures and ecosystems."
-      },
-      {
-        "designation": "3QPRV",
-        "type": "Desert",
-        "description": "A planet of endless deserts and shifting sand dunes."
-      },
-      {
-        "designation": "JW55Q",
-        "type": "Desert",
-        "description": "The planet's extreme temperatures make survival a constant challenge."
-      },
-      {
-        "designation": "2IX9K",
-        "type": "Gas Giant",
-        "description": "Vibrant bands of clouds stretch across the gas giant's atmosphere."
-      }
-    ]
-  },
-  {
     "index": 15079,
     "designation": "LW6",
     "classification": "Black Hole",
@@ -374,6 +346,44 @@
         "designation": "23AQC",
         "type": "Gas Giant",
         "description": "The gas giant's atmosphere is constantly in motion, creating stunning visuals."
+      }
+    ]
+  },
+  {
+    "index": 29783,
+    "designation": "W0L",
+    "classification": "Solitary",
+    "economy": "luxurious",
+    "planets": [
+      {
+        "designation": "J6LBZ",
+        "type": "Gas Giant",
+        "description": "Gas giants are often accompanied by a retinue of moons and rings."
+      },
+      {
+        "designation": "I3NMP",
+        "type": "Desert",
+        "description": "Desert planets have a stark and minimalist aesthetic."
+      },
+      {
+        "designation": "7V511",
+        "type": "Frozen",
+        "description": "The planet's icy surface is sculpted by harsh winds and subzero temperatures."
+      },
+      {
+        "designation": "S5PB7",
+        "type": "Desert",
+        "description": "A planet with vast salt flats and dry riverbeds."
+      },
+      {
+        "designation": "WH4KP",
+        "type": "Desert",
+        "description": "The planet's desolate beauty is a testament to the power of nature."
+      },
+      {
+        "designation": "71NEB",
+        "type": "Desert",
+        "description": "A world where water is scarce and life adapts to extreme conditions."
       }
     ]
   }
