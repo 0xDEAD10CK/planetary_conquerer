@@ -1,5 +1,6 @@
 import json
 from utils import clear
+import os
 
 
 def create_pilot(name):
@@ -26,16 +27,21 @@ def create_pilot(name):
         "credits": 50000,
         }
 
-    with open(f"pilot_files/{name}-pilot.json", "w") as json_file:
+    path = f"pilot_files/{name}"
+    os.mkdir(path)
+    with open(f"pilot_files/{name}/{name}-pilot.json", "w") as json_file:
         json.dump(pilot, json_file, indent=2)
-    with open(f"pilot_files/{name}-ship.json", "w") as json_file:
+    with open(f"pilot_files/{name}/{name}-ship.json", "w") as json_file:
         json.dump(ship, json_file, indent=2)
 
+    return name
 
-def view_player():
-    with open("pilot_files/pilot.json", "r") as json_file:
+
+def view_player(name):
+    saveLocation = f"pilot_files/{name}/{name}"
+    with open(f"{saveLocation}-pilot.json", "r") as json_file:
         pilot = json.load(json_file)
-    with open("pilot_files/ship.json", "r") as json_file:
+    with open(f"{saveLocation}-ship.json", "r") as json_file:
         ship = json.load(json_file)
 
         print("Pilot:")

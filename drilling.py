@@ -1,6 +1,7 @@
 import time
 import random
 import math
+from colorama import init, Fore, Style
 
 # Function to clear the console (for better animation)
 def clear_console():
@@ -18,15 +19,19 @@ def add_debris(image, debrisX, debrisY):
         row = list(image[i])
         for j in range(10, 15):
             if random.random() < 0.3:  # Adjust the probability as desired
-                row[j] = random.choice([".", ",", ":", ";", "'", "\""])
+                randomColor = random.choice([Fore.RED, Fore.GREEN, Fore.YELLOW, Fore.BLUE])
+                debris_char = random.choice(['.', ',', ':', ';', "'", "\""])
+                row[j] = f"{randomColor}{debris_char}{Style.RESET_ALL}"
             elif row[j] != " " and random.random() < 0.4:  # Remove spaces to maintain width
                 row[j] = " "
         for j in range(22, 27):  # Add debris on the other side
             if random.random() < 0.3:
-                row[j] = random.choice([".", ",", ":", ";", "'", "\""])
+                debris_char = random.choice(['.', ',', ':', ';', "'", "\""])
+                row[j] = debris_char
             elif row[j] != " " and random.random() < 0.4:  # Remove spaces to maintain width
                 row[j] = " "
         image[i] = "".join(row)
+
 
 
 # Animate the image
@@ -42,15 +47,16 @@ def run_miner():
         "         |      /+++\      |                           ",
         "         |     |=====|     |                           ",
         "         |      \===/      |                           ",
-        "         \       \=/       /                           "
+        "         \       \=/       /                           ",
+        "          \       V       /                            "
     ]
 
     # Define variables
     finished = False
     x = 0
     y = 0
-    debrisZoneX = 5
-    debrisZoneY = 9
+    debrisZoneX = 6
+    debrisZoneY = 10
     ore_name = random.choice(["Helindesite", "Kelorium", "Veqsum", "Lomdesium"])
     while finished == False :  # You can change the number of frames
 
@@ -61,7 +67,7 @@ def run_miner():
 
         display_image(drill_image)
         add_debris(drill_image, debrisZoneX, debrisZoneY)
-        time.sleep(0.05)  # Adjust the sleep time for desired speed
+        time.sleep(0.5)  # Adjust the sleep time for desired speed
         #drill_image.insert(0, " " * 16 + "|///|" + " " * 16)  # Add a new line at the top
 
         hitChance = random.random()
