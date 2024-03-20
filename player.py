@@ -13,6 +13,16 @@ def create_pilot(name):
         occ = input("Occupation: ")
     
     
+    # Create directory if it doesn't exist
+    pilot_directory = "./pilot_files/"
+    if not os.path.exists(pilot_directory):
+        os.makedirs(pilot_directory)
+
+    # Create subdirectory for the pilot
+    pilot_directory = f"./pilot_files/{name}"
+    os.makedirs(pilot_directory)
+    
+
     ship = {
         "name": "The Fresh Glizzy",
         "class": "Peasant",
@@ -27,8 +37,6 @@ def create_pilot(name):
         "credits": 50000,
         }
 
-    path = f"pilot_files/{name}"
-    os.mkdir(path)
     with open(f"pilot_files/{name}/{name}-pilot.json", "w") as json_file:
         json.dump(pilot, json_file, indent=2)
     with open(f"pilot_files/{name}/{name}-ship.json", "w") as json_file:
