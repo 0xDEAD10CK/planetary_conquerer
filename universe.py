@@ -1,6 +1,7 @@
 import random
 import json
 import itertools
+import os
 from descriptors import generate_descriptor, generate_star_system_type, generate_star_system_economy
 
 alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
@@ -19,6 +20,8 @@ def generate_universe():
             "designation": ''.join(chars),
             "classification": generate_star_system_type(),
             "economy": generate_star_system_economy(random.randint(1, 100)),
+            "x-coord": random.randint(-1000, 1000),
+            "y-coord": random.randint(-1000, 1000),
             "planets": []
         }
 
@@ -55,6 +58,11 @@ def generate():
 
     print("Total unique Solar Systems:", len(generated_data))
     print("Total unique planets:", total_planets)
+
+    # Create directory if it doesn't exist
+    universe_directory = "./universe_files"
+    if not os.path.exists(universe_directory):
+        os.makedirs(universe_directory)
 
     with open("universe_files/universe.json", "w") as json_file:
         json.dump(generated_data, json_file, indent=2)

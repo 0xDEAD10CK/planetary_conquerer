@@ -20,7 +20,8 @@ def create_pilot(name):
 
     # Create subdirectory for the pilot
     pilot_directory = f"./pilot_files/{name}"
-    os.makedirs(pilot_directory)
+    if not os.path.exists(pilot_directory):
+        os.makedirs(pilot_directory)
     
 
     ship = {
