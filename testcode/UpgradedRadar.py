@@ -2,6 +2,9 @@ import json
 import matplotlib.pyplot as plt
 import numpy as np
 
+visible_systems = []
+visible_systems_names = []
+
 with open("universe.json", "r") as json_file:
         systems = json.load(json_file)
 
@@ -22,23 +25,11 @@ def convert_to_polar_coordinates(systems):
         polar_coordinates.append((theta, r))
     return polar_coordinates
 
-
-def move_systems(systems, central_system, new_central_system):
-    dx = new_central_system['x-coord'] - central_system['x-coord']
-    dy = new_central_system['y-coord'] - central_system['y-coord']
-    
-    # Move the systems relative to the new central system
-    for system in systems:
-        if system['x-coord'] >= central_system['x-coord']:
-            system['x-coord'] += dx
-        else:
-            system['x-coord'] -= dx
-        
-        if system['y-coord'] >= central_system['y-coord']:
-            system['y-coord'] += dy
-        else:
-            system['y-coord'] -= dy
-
+def get_object_by_designation(designation):
+    for obj in systems:
+        if obj["designation"] == designation:
+            return obj
+    return None  # Return None if designation is not found
 
 def plot_systems(polar_coordinates, systems, central_system, max_range=10):
     # Extract polar coordinates and names
@@ -56,8 +47,9 @@ def plot_systems(polar_coordinates, systems, central_system, max_range=10):
     ys -= central_y
     
     # Filter systems based on maximum range
-    visible_systems = [(x, y, name) for x, y, name in zip(xs, ys, names) if abs(x) <= max_range and abs(y) <= max_range]
+    visible_systems = [(x, y, name) for x, y, name in zip(xs, ys, names) if abs(x) <= max_range and abs(y) <= max_range   ]
     xs, ys, names = zip(*visible_systems)
+
     
     # Plot the systems
     plt.figure(figsize=(10, 10))
@@ -89,6 +81,8 @@ def plot_systems(polar_coordinates, systems, central_system, max_range=10):
     plt.title('Star Systems')
     plt.show()
 
+    return visible_systems
+
 
 
 # Generate 50 star systems
@@ -97,16 +91,24 @@ def plot_systems(polar_coordinates, systems, central_system, max_range=10):
 # Select an initial central system
 initial_central_system = np.random.choice(systems)
 
+print(initial_central_system)
+
 # Convert XY coordinates to polar coordinates relative to the initial central system
 polar_coordinates = convert_to_polar_coordinates(systems)
 
 
 # Plot the star systems with the initial central system
-plot_systems(polar_coordinates, systems, initial_central_system, max_range=10)
+visible_systems = plot_systems(polar_coordinates, systems, initial_central_system, max_range=10)
 
+for i in visible_systems:
+        visible_systems_names.append(i[2])
+
+print(visible_systems_names)
 
 # Suppose the user selects a new central system
-new_central_system = np.random.choice(systems)
+new_designation = np.random.choice(visible_systems_names)
+
+new_central_system = get_object_by_designation(new_designation)
 
 # Plotting the radar plot with updated positions
 plot_systems(polar_coordinates, systems, new_central_system, max_range=10)
