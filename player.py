@@ -37,9 +37,9 @@ def create_pilot(name):
         "credits": 50000,
         }
 
-    with open(f"pilot_files/{name}/{name}-pilot.json", "w") as json_file:
+    with open(f"pilot_files/{name}/pilot.json", "w") as json_file:
         json.dump(pilot, json_file, indent=2)
-    with open(f"pilot_files/{name}/{name}-ship.json", "w") as json_file:
+    with open(f"pilot_files/{name}/ship.json", "w") as json_file:
         json.dump(ship, json_file, indent=2)
 
     return name

@@ -50,13 +50,13 @@ def view_nearby_systems(nearby_systems_file):
 ################################################################################################################
 
 
-def move_to_nearby_system(destination_designation):
+def move_to_nearby_system(destination_designation, pilot):
     # Load the nearby star systems
     with open(original_file_name, "r") as json_file:
         universe = json.load(json_file)
     with open(nearby_systems_file, "r") as json_file:
         nearby_systems = json.load(json_file)
-    with open("pilot_files/ship.json", "r") as json_file:
+    with open(f"pilot_files/{pilot}/ship.json", "r") as json_file:
         ship = json.load(json_file)
 
     currentIndex = 0

@@ -1,0 +1,9 @@
+{
+  "name": "The Fresh Glizzy",
+  "class": "Peasant",
+  "fuelUnits": 50,
+  "modules": [
+    "Scanner"
+  ],
+  "inventory": {}
+}

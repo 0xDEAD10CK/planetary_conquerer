@@ -1,109 +1,5 @@
 [
   {
-    "index": 15079,
-    "designation": "LW6",
-    "classification": "Black Hole",
-    "economy": "prosperous",
-    "planets": [
-      {
-        "designation": "JR0EL",
-        "type": "Frozen",
-        "description": "Frozen planets are characterized by icy landscapes and frigid conditions."
-      },
-      {
-        "designation": "5NHXD",
-        "type": "Desert",
-        "description": "The planet's extreme temperatures make survival a constant challenge."
-      },
-      {
-        "designation": "3KJ8W",
-        "type": "Gas Giant",
-        "description": "The swirling gases of this planet create an ethereal and captivating sight."
-      },
-      {
-        "designation": "BXYG0",
-        "type": "Rocky",
-        "description": "Erosion has sculpted intricate patterns into the planet's surface."
-      },
-      {
-        "designation": "0HFOQ",
-        "type": "Gas Giant",
-        "description": "Gas giants have a unique beauty that sets them apart from other planets."
-      }
-    ]
-  },
-  {
-    "index": 21451,
-    "designation": "QT6",
-    "classification": "Nebula",
-    "economy": "opulent",
-    "planets": [
-      {
-        "designation": "TTGV5",
-        "type": "Frozen",
-        "description": "A planet where water has frozen into towering ice spires."
-      },
-      {
-        "designation": "BRTU8",
-        "type": "Oceanic",
-        "description": "Oceanic planets are characterized by vast bodies of water that cover the surface."
-      },
-      {
-        "designation": "7P80D",
-        "type": "Oceanic",
-        "description": "Oceanic planets have a unique and captivating underwater beauty."
-      },
-      {
-        "designation": "V9596",
-        "type": "Gas Giant",
-        "description": "The planet's magnetic field creates stunning auroras in its atmosphere."
-      },
-      {
-        "designation": "S70NB",
-        "type": "Gas Giant",
-        "description": "A planet composed mostly of gas with no solid surface."
-      },
-      {
-        "designation": "4F4HW",
-        "type": "Rocky",
-        "description": "The surface is dotted with ancient rock formations and boulders."
-      },
-      {
-        "designation": "9EF25",
-        "type": "Desert",
-        "description": "A planet with vast salt flats and dry riverbeds."
-      }
-    ]
-  },
-  {
-    "index": 10250,
-    "designation": "H71",
-    "classification": "Solitary",
-    "economy": "upper middle-class",
-    "planets": [
-      {
-        "designation": "BVLCS",
-        "type": "Frozen",
-        "description": "The planet's icy surface is crisscrossed with deep crevices."
-      },
-      {
-        "designation": "ADTPN",
-        "type": "Frozen",
-        "description": "A world where the air is so cold that it freezes on contact."
-      },
-      {
-        "designation": "1YT91",
-        "type": "Oceanic",
-        "description": "A planet of endless oceans and sprawling seas."
-      },
-      {
-        "designation": "JLG35",
-        "type": "Oceanic",
-        "description": "A world where life thrives in the depths of the oceans."
-      }
-    ]
-  },
-  {
     "index": 25050,
     "designation": "TL5",
     "classification": "Pulsar",
@@ -384,6 +280,105 @@
         "designation": "71NEB",
         "type": "Desert",
         "description": "A world where water is scarce and life adapts to extreme conditions."
+      }
+    ]
+  },
+  {
+    "index": 6249,
+    "designation": "E4V",
+    "classification": "Pulsar",
+    "economy": "middle-earning",
+    "planets": [
+      {
+        "designation": "URL0H",
+        "type": "Desert",
+        "description": "A planet of endless deserts and shifting sand dunes."
+      },
+      {
+        "designation": "V9QLQ",
+        "type": "Gas Giant",
+        "description": "A gas giant's atmosphere can extend for thousands of kilometers."
+      },
+      {
+        "designation": "3572G",
+        "type": "Frozen",
+        "description": "Frozen planets often have a pale, blue-white coloration."
+      }
+    ]
+  },
+  {
+    "index": 5547,
+    "designation": "EKD",
+    "classification": "Pulsar",
+    "economy": "wealthy",
+    "planets": [
+      {
+        "designation": "4LWAX",
+        "type": "Oceanic",
+        "description": "The planet's surface is a mosaic of islands and atolls."
+      },
+      {
+        "designation": "0Z4YV",
+        "type": "Desert",
+        "description": "The planet's extreme temperatures make survival a constant challenge."
+      },
+      {
+        "designation": "MMPZB",
+        "type": "Gas Giant",
+        "description": "Gas giants have a thick atmosphere and lack a solid core."
+      },
+      {
+        "designation": "8GVVJ",
+        "type": "Gas Giant",
+        "description": "The planet's magnetic field creates stunning auroras in its atmosphere."
+      },
+      {
+        "designation": "2W4HT",
+        "type": "Gas Giant",
+        "description": "The planet's colossal size is a result of its gaseous composition."
+      },
+      {
+        "designation": "K6SD0",
+        "type": "Desert",
+        "description": "The planet's deserts are both beautiful and unforgiving."
+      },
+      {
+        "designation": "WXK1A",
+        "type": "Oceanic",
+        "description": "The planet's underwater ecosystems are delicate and interconnected."
+      },
+      {
+        "designation": "9G2MY",
+        "type": "Frozen",
+        "description": "Frozen planets are often found in the outer reaches of star systems."
+      }
+    ]
+  },
+  {
+    "index": 25531,
+    "designation": "TZH",
+    "classification": "Nebula",
+    "economy": "upper management",
+    "planets": [
+      {
+        "designation": "ZPOUH",
+        "type": "Frozen",
+        "description": "A world of ice and cold, where life struggles to survive."
+      },
+      {
+        "designation": "R7E2I",
+        "type": "Desert",
+        "description": "The desert landscape is punctuated by rugged rock formations."
+      },
+      {
+        "designation": "WKT2X",
+        "type": "Frozen",
+        "description": "A frozen wasteland where temperatures plummet to unimaginable lows."
+      },
+      {
+        "designation": "ILOAZ",
+        "type": "Desert",
+        "description": "The planet's desolate beauty is a testament to the power of nature."
       }
     ]
   }

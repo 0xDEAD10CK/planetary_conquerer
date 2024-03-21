@@ -46,4 +46,4 @@ while gameState == True:
         view_nearby_systems("universe_files/selected_star_systems.json")
         choice = input("\nWould you like to move to a new system? Y/N:")
         if choice == "Y":
-            move_to_nearby_system(input("Insert Designation: "))
+            move_to_nearby_system(input("Insert Designation: "), playerName)

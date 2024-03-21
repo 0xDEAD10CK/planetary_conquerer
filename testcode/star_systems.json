@@ -1,0 +1,15 @@
+{
+    "star_systems": [
+      {"name": "System1", "x": 3, "y": 4},
+      {"name": "System2", "x": -2, "y": 5},
+      {"name": "System3", "x": -4, "y": -3},
+      {"name": "System4", "x": 2, "y": -6},
+      {"name": "System5", "x": 6, "y": 1},
+      {"name": "System6", "x": 0, "y": 7},
+      {"name": "System7", "x": -5, "y": 2},
+      {"name": "System8", "x": 1, "y": 3},
+      {"name": "System9", "x": 4, "y": -5},
+      {"name": "System10", "x": -3, "y": -2}
+    ]
+  }
+  
