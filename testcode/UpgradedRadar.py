@@ -5,7 +5,7 @@ import numpy as np
 visible_systems = []
 visible_systems_names = []
 
-with open("universe.json", "r") as json_file:
+with open("./universe.json", "r") as json_file:
         systems = json.load(json_file)
 
 # def generate_star_systems(num_systems):
