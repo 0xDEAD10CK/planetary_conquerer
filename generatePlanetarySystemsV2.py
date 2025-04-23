@@ -2,6 +2,7 @@ import random
 import json
 import itertools
 from descriptors import generate_descriptor, generate_star_system_type, generate_star_system_economy
+import os
 
 alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
 planet_types = ["Rocky", "Gas Giant", "Frozen", "Oceanic", "Desert"]
@@ -48,6 +49,12 @@ def generate_universe():
 
     random.shuffle(solarSystems)
     return solarSystems
+
+universe_path = "universe_files"
+
+if not os.path.exists(universe_path):
+    os.mkdir("universe_files")
+    open("universe_files/universe.json", 'a').close()
 
 generated_data = generate_universe()
 total_planets = sum(len(system["planets"]) for system in generated_data)
